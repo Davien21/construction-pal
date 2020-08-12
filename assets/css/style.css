@@ -40,11 +40,41 @@ ul, ol {
 .orange-txt {
 	/*color: rgb(255, 108, 0) !important;*/
 }
+.orange-bg {
+	background-color: rgb(255, 108, 0) !important;
+}
 .green-txt {
-	color: #19D895
+	color: #28A745
+}
+.med-svg {
+	cursor: pointer;
+	width:20px;
+	/*height:20px;*/
+	height: auto;
+}
+.green-btn {
+	color: #fff !important;
+	/*border-radius: 30px;*/
+	background-color: #28A745;
+}
+.green-btn * {
+	color: #fff !important;
+	opacity: 1 !important;
+}
+.green-btn:hover {
+	color: #fff !important;
+	background-color: #19D895;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12) !important;
+
 }
 /* ======= Menu or Navbar styles  ======= */
-
+nav  *{
+	font-size: 95% !important;
+}
+a.navbar-brand {
+	font-size: 120% !important;
+	align-self: flex-end;
+}
 .menu-span {
 	box-shadow: 2px -3px 0px 18px #FFF;
 }
@@ -53,9 +83,17 @@ ul, ol {
 	width:35px;
 	height: auto;
 }
-
+.social-svgs img, img.social-svg  {
+	cursor: pointer;
+	width:15px;
+	/*height:15px;*/
+}
 .active, li.active a {
-	color: #19D895 !important;
+	color: #28A745 !important;
+}
+.nav-item.btn-success a {
+	color: #fff !important;
+	opacity: 1;
 }
 a.nav-link {
 	text-transform: uppercase;
@@ -67,5 +105,5 @@ a.nav-link {
 
 }
 li.nav-item :hover {
-	color: #19D895 !important;
+	color: #28A745 !important;
 }
