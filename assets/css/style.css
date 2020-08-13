@@ -155,7 +155,7 @@ li.nav-item :hover {
 	font-weight: 550;
 }
 .side-menu a.nav-link {
-	font-size: 1rem !important;
+	font-size: 0.9rem !important;
 }
 .hide-sidemenu {
 	/*width: 0;*/
