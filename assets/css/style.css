@@ -169,6 +169,15 @@ li.nav-item :hover {
 	width: 100vw;
 	top: 0; right: -100vw;
 }
+.side-menu .close-btn {
+	position: absolute;
+	right: 15px;
+	top: 15px;
+}
+.side-menu .close-btn img{
+	width: 30px;
+	height: 30px;
+}
 @media screen and (min-width:768px) {
 	.side-menu {
 		max-width: 320px;
