@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	/*==== These Functions are concerned with the navigation and menu ======*/
+/*==== These Functions are concerned with the navigation and menu ======*/
 	(function () {
 		let is_small_screen = () => window.matchMedia ('(max-width: 991px)').matches;
 		handle_nav(is_small_screen());
@@ -74,15 +74,7 @@ $(document).ready(function() {
 	/* ===== This is the end of sidebar functions =====*/
 
 
-	/*==== This is the end of navigation and menu functions ======*/
+/*==== This is the end of navigation and menu functions ======*/
 
-	/*==== This portion will handle the carousels or slider functions ======*/
-     
-	var mySwiper = new Swiper('.swiper-container', {
-	    speed: 400,
-	    spaceBetween: 100
-	});
-     
-
-
-});
+	 
+})
