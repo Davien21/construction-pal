@@ -76,4 +76,13 @@ $(document).ready(function() {
 
 	/*==== This is the end of navigation and menu functions ======*/
 
+	/*==== This portion will handle the carousels or slider functions ======*/
+     
+	var mySwiper = new Swiper('.swiper-container', {
+	    speed: 400,
+	    spaceBetween: 100
+	});
+     
+
+
 });
