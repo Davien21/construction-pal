@@ -2,7 +2,8 @@
 [Table of contents]
 01. Google Fonts
 02. Default styles
-03. Sidebar style
+03. Menu or Navbar styles
+03. Sidebar styles
 04. Slider style
 05. Navigation style
 06. Footer style
@@ -18,12 +19,14 @@
 * {
     border:none;
     outline:none;
-    transition: 0.4s ease-in-out;
+    margin: 0;
+    padding: 0;
+    /*transition: 0.4s ease-in-out;
     -webkit-transition: all 300ms ease-in-out;
     -ms-transition: all 300ms ease-in-out;
     -o-transition: all 300ms ease-in-out;
     -moz-transition: all 300ms ease-in-out;
-    transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;*/
 }
 body {
     overflow-wrap: break-word;
@@ -38,7 +41,7 @@ ul, ol {
 	font-weight: 550;
 }
 .orange-txt {
-	/*color: rgb(255, 108, 0) !important;*/
+	color: rgb(255, 108, 0) !important;
 }
 .orange-bg {
 	background-color: rgb(255, 108, 0) !important;
@@ -67,13 +70,44 @@ ul, ol {
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12) !important;
 
 }
+.social-svgs img, img.social-svg  {
+	cursor: pointer;
+	width:15px;
+}
+.circle-svgs {
+	border: 1px solid #000;
+	border-radius: 40%;
+}
+.active, li.active a {
+	color: #28A745 !important;
+}
+.no-trans {
+    transition: none !important;
+}
+.upper-case {
+	text-transform: uppercase;
+}
 /* ======= Menu or Navbar styles  ======= */
+nav {
+	overflow: hidden;
+}
 nav  *{
 	font-size: 95% !important;
 }
+
+.sticky {
+	position: fixed;
+	top: 0; left: 0;
+	padding: 0.5rem 0;
+	width: 100%;
+	box-shadow: 0 6px 10px -4px rgba(0,0,0,.15);
+	z-index: 2;
+}
+
 a.navbar-brand {
 	font-size: 120% !important;
 	align-self: flex-end;
+	font-weight: 550;
 }
 .menu-span {
 	box-shadow: 2px -3px 0px 18px #FFF;
@@ -83,14 +117,7 @@ a.navbar-brand {
 	width:35px;
 	height: auto;
 }
-.social-svgs img, img.social-svg  {
-	cursor: pointer;
-	width:15px;
-	/*height:15px;*/
-}
-.active, li.active a {
-	color: #28A745 !important;
-}
+
 .nav-item.btn-success a {
 	color: #fff !important;
 	opacity: 1;
@@ -106,4 +133,39 @@ a.nav-link {
 }
 li.nav-item :hover {
 	color: #28A745 !important;
+}
+
+/* ======= Side menu styles  ======= */
+.side-menu *{
+	text-align: left;
+}
+.side-menu {
+	max-width: 250px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 0.5rem 0;
+	width: 100%;
+	height: 100vh;
+	z-index: 5;
+}
+
+.side-menu a.navbar-brand {
+	font-size: 150% !important;
+	font-weight: 550;
+}
+.hide-sidemenu {
+	/*width: 0;*/
+}
+.hide-sidemenu .side-menu {
+	/*width: 0;*/
+}
+.side-menu-overlay {
+    transition: 0.4s ease-in-out;
+
+	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+	position: fixed;
+	height: 100vh;
+	width: 100vw;
+	top: 0; right: -100vw;
 }
