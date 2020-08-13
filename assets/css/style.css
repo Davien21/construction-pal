@@ -139,7 +139,7 @@ li.nav-item :hover {
 	text-align: left;
 }
 .side-menu {
-	max-width: 75vw;
+	max-width: 98vw;
 	position: absolute;
 	top: 0;	right: 0;
 	padding: 0.5rem 0;
@@ -178,7 +178,7 @@ li.nav-item :hover {
 	width: 30px;
 	height: 30px;
 }
-@media screen and (min-width:768px) {
+@media screen and (min-width:600px) {
 	.side-menu {
 		max-width: 320px;
 	}
