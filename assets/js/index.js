@@ -24,9 +24,11 @@ $(document).ready(function() {
 		if (window.pageYOffset >= 43) {
 			$('#sticky-nav').addClass('px-3 sticky')
 			$('#top-nav #contacts-ul').removeClass('mb-2')
+			$('nav').removeClass('paper-box-shadow')
 		}else  {
 			$('#sticky-nav').removeClass('px-3 sticky')
 			$('#top-nav #contacts-ul').addClass('mb-2')
+			$('nav').addClass('paper-box-shadow')
 		}
 	}
 	function handle_nav_on_scroll () {
