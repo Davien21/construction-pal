@@ -140,7 +140,7 @@ li.nav-item :hover {
 	text-align: left;
 }
 .side-menu {
-	max-width: 250px;
+	max-width: 350px;
 	position: absolute;
 	top: 0;	right: 0;
 	padding: 0.5rem 0;
