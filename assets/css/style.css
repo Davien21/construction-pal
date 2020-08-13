@@ -11,7 +11,6 @@
 
 
 /* ======= Google Fonts  ======= */
-/*@import url('https://fonts.googleapis.com/css?family=Rambla:300,400,700,900|Playfair+Display:400,400i,700,700i,900,900i&display=swap');*/
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900');
 
 
@@ -140,7 +139,7 @@ li.nav-item :hover {
 	text-align: left;
 }
 .side-menu {
-	max-width: 400px;
+	max-width: 75vw;
 	position: absolute;
 	top: 0;	right: 0;
 	padding: 0.5rem 0;
@@ -148,7 +147,6 @@ li.nav-item :hover {
 	height: 100vh;
 	z-index: 5;
 }
-
 .side-menu a.navbar-brand {
 	font-size: 150% !important;
 }
