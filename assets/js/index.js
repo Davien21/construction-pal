@@ -3,8 +3,10 @@ $(document).ready(function() {
 	(function () {
 		let is_small_screen = () => window.matchMedia ('(max-width: 991px)').matches;
 		handle_nav(is_small_screen());
+		adjust_carousel_imgs();
 		window.onresize = () => {
 			handle_nav(is_small_screen());
+			adjust_carousel_imgs(is_small_screen());
 		}
 	})();
 
@@ -76,5 +78,17 @@ $(document).ready(function() {
 
 /*==== This is the end of navigation and menu functions ======*/
 
-	 
+/*==== This portion will handle the carousels or slider functions ======*/
+
+	/*===== This will change carousel images based on screen size ======*/
+
+	function adjust_carousel_imgs (screen_bool) {
+		if(!screen_bool) {
+			$('.slide-img').each(function(index, el) {
+				el.src = el.src.replace('.jpg','-sm.jpg')
+				console.log(el);
+			});
+		}
+	}
+	
 })
