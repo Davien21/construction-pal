@@ -70,7 +70,6 @@ $(document).ready(function() {
 	}
 	function handleSideNav () {
 		$('.nav-toggler').click(function(e) {
-			// alert('side')
 			toggleSideNav()
 		});
 		$(".side-menu-overlay").click(function(e) {
@@ -103,5 +102,6 @@ $(document).ready(function() {
 		// 	});
 		// }
 	}
+/*==== This is the end of the carousel or slider functions ======*/
 
 })
