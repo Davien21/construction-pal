@@ -10,6 +10,7 @@ $(document).ready(function() {
 		}
 	})();
 		$('.nav-toggler').click(function(e) {
+			alert('side')
 			toggleSideNav()
 		});
 		$(".side-menu-overlay").click(function(e) {
