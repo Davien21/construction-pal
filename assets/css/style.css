@@ -214,7 +214,9 @@ li.nav-item :hover {
 		min-height: 84.1vh;
 	}
 }
-
+.carousel .controls {
+	z-index: 100;
+}
 .carousel-item::after {
 	content: "";  
     position: absolute;
@@ -236,7 +238,7 @@ li.nav-item :hover {
 	width: 80%;
 }
 .carousel-item .slider-txts p {
-	font-size: 1rem;
+	font-size: 1.2rem;
 	color: #fff;
 	line-height: 2rem;
 }
