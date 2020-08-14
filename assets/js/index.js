@@ -9,6 +9,15 @@ $(document).ready(function() {
 			// adjust_carousel_imgs(is_small_screen());
 		}
 	})();
+		$('.nav-toggler').click(function(e) {
+			toggleSideNav()
+		});
+		$(".side-menu-overlay").click(function(e) {
+			toggleSideNav();
+		});
+		$(".side-menu").click(function(e) {
+			e.stopPropagation();
+		});
 
 	/*function below takes true or false
 	*for small or large screens respectively
@@ -69,15 +78,6 @@ $(document).ready(function() {
 		}
 	}
 	function activateSideNav () {
-		$('.nav-toggler').click(function(e) {
-			toggleSideNav()
-		});
-		$(".side-menu-overlay").click(function(e) {
-			toggleSideNav();
-		});
-		$(".side-menu").click(function(e) {
-			e.stopPropagation();
-		});
 	}
 	/* ===== This is the end of sidebar functions =====*/
 
