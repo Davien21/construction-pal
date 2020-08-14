@@ -9,25 +9,15 @@ $(document).ready(function() {
 			// adjust_carousel_imgs(is_small_screen());
 		}
 	})();
-		$('.nav-toggler').click(function(e) {
-			// alert('side')
-			toggleSideNav()
-		});
-		$(".side-menu-overlay").click(function(e) {
-			toggleSideNav();
-		});
-		$(".side-menu").click(function(e) {
-			e.stopPropagation();
-		});
+
 
 	/*function below takes true or false
 	*for small or large screens respectively
 	*/
 	function handle_nav (screen_bool) {
-		if (screen_bool) {
-			activateSideNav();
-		}else {
-			handle_nav_on_scroll();
+		handleSideNav();
+		if (!screen_bool) {
+			handleNavOnScroll();
 		}
 	}
 	/* =====These functions handle the sticky top navbar  */
@@ -49,7 +39,7 @@ $(document).ready(function() {
 			});
 		}
 	}
-	function handle_nav_on_scroll () {
+	function handleNavOnScroll () {
 		let scrollTop = $(window).scrollTop();
 		$(window).scroll(function(e) {
 			make_sticky_nav ();
@@ -78,7 +68,17 @@ $(document).ready(function() {
 			closeSideBar();
 		}
 	}
-	function activateSideNav () {
+	function handleSideNav () {
+		$('.nav-toggler').click(function(e) {
+			// alert('side')
+			toggleSideNav()
+		});
+		$(".side-menu-overlay").click(function(e) {
+			toggleSideNav();
+		});
+		$(".side-menu").click(function(e) {
+			e.stopPropagation();
+		});
 	}
 	/* ===== This is the end of sidebar functions =====*/
 
