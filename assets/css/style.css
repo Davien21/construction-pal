@@ -11,7 +11,7 @@
 
 
 /* ======= Google Fonts  ======= */
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900|Raleway:300,400,700,900');
 
 
 /* ======= Default styles  ======= */
@@ -46,8 +46,18 @@ ul, ol {
 	margin: 0;
 	padding: 0;
 }
+.max-100vh {
+	max-height: 100vh;
+}
 .emphasis {
 	font-weight: 550;
+}
+.section-title {
+	font-family: 'Raleway';
+
+}
+.raleway {
+	font-family: 'Raleway';
 }
 .orange-txt {
 	color: rgb(255, 108, 0) !important;
@@ -201,7 +211,7 @@ li.nav-item :hover {
 }
 @media screen and (min-width:768px) {
 	.carousel-item {
-		min-height: 80vh;
+		min-height: 84.1vh;
 	}
 }
 
@@ -236,4 +246,31 @@ li.nav-item :hover {
 		color: #fff;
 		line-height: 4rem;
 	}
+}
+/* ==== Styles for the stores section ====*/
+img#mobile-life {
+	max-height: 74vh;
+	width: 100%;
+}
+.store-icons {
+	width: auto;
+	cursor: pointer;
+}
+.sm-store-imgs .store-icons {
+	height: 50px !important;
+}
+.md-store-imgs .store-icons {
+	height: 100px;
+}
+@media screen and (min-width:768px) {
+	.md-store-imgs .store-icons {
+		height: 60px;
+	}
+
+}
+@media screen and (min-width:992px) {
+	.md-store-imgs .store-icons {
+		height: 80px;
+	}
+
 }
