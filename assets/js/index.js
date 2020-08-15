@@ -104,4 +104,11 @@ $(document).ready(function() {
 	}
 /*==== This is the end of the carousel or slider functions ======*/
 
+	/*===== This will handle popper like drop downs like in the privacy policy page ======*/
+		
+    $(".dropper").click(function(){
+        $(this).find('.drop').toggleClass('d-none')
+        $(this).find('.link').toggleClass('d-none')
+    });
+     
 })

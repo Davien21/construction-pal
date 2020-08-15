@@ -124,6 +124,16 @@ ul, ol {
 	border: 1px solid #000;
 	border-radius: 40%;
 }
+.link {
+	font-size: 0.95em;
+    color: #0069D9 !important;
+    /*text-decoration: underline;*/
+    overflow-wrap: break-word;
+}
+.break-word {
+    overflow-wrap: break-word;
+}
+
 .active, li.active a {
 	color: #28A745 !important;
 }
@@ -356,4 +366,32 @@ body#login section#login {
 .feature-svg {
 	height: 50px;
 	width: 50px;
+}
+
+/*============================================= PRIVACY PAGE =================================================== */
+
+.question-box {
+    cursor: pointer;
+}
+.def-hover:hover {
+    border-bottom: 2px solid #28A745;
+    color: #000;
+    outline: none;
+    text-decoration: none !important;
+}
+.def-h-texts {
+	font-size: 200%;
+    color: #000;
+
+	opacity: 0.8;
+}
+
+/*============================================= 404 PAGE =================================================== */
+body#error-404-page *{
+	font-family: Raleway;
+}
+
+.error-404 {
+	/*max-height: 400px;*/
+	/*max-width: 500px;*/
 }
