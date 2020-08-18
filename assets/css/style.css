@@ -69,6 +69,9 @@ ul, ol {
 .raleway {
 	font-family: 'Raleway' !important;
 }
+.raleway-all *,.raleway-all {
+	font-family: 'Raleway' !important;
+}
 .orange-txt {
 	color: rgb(255, 108, 0) !important;
 }
@@ -320,16 +323,16 @@ img#mobile-life {
 
 }
 /* ==== Footer styles =====*/
-footer {
+body > footer {
 	min-height: 92vh;
 	background-color: #272941;
 }
-footer * {
+body > footer * {
 	color: #fff !important;
 	font-family: Raleway;
 }
 
-footer .footer-li {
+body > footer .footer-li {
 	opacity: 0.6;
 	cursor: pointer;
 }
@@ -368,30 +371,33 @@ body#login section#login {
 	width: 50px;
 }
 
-/*============================================= PRIVACY PAGE =================================================== */
-
-.question-box {
-    cursor: pointer;
-}
-.def-hover:hover {
-    border-bottom: 2px solid #28A745;
-    color: #000;
-    outline: none;
-    text-decoration: none !important;
-}
-.def-h-texts {
-	font-size: 200%;
-    color: #000;
-
-	opacity: 0.8;
-}
-
 /*============================================= 404 PAGE =================================================== */
-body#error-404-page *{
-	font-family: Raleway;
+
+body#error-404-page {
+	background-color: #F8FCFF;
+}
+body#error-404-page h2{
+	margin-top: -50px;
+}
+@media screen and (min-width:768px) {
+	body#error-404-page h2{
+		margin-top: -100px;
+	}
 }
 
-.error-404 {
-	/*max-height: 400px;*/
-	/*max-width: 500px;*/
+/*============================================= TERMS AND CONDITIONS PAGE =================================================== */
+body#terms-conditions-page {
+
 }
+body#terms-conditions-page h1 {
+	font-size: 2rem;
+}
+body#terms-conditions-page h3 {
+	font-size: 1.3rem;
+}
+@media screen and (min-width:768px) {
+	body#terms-conditions-page h1 {
+		font-size: 2.5rem;
+	}
+}
+ 
